@@ -121,6 +121,10 @@ set(CMAKE_CXX_EXTENSIONS ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
+set(FBOW_INCLUDE_DIRS "/usr/local/include")
+set(FBOW_LIBS "/usr/local/lib/libfbow.so")
+find_package(fbow REQUIRED)
+
 ################################################################################
 # Add modules
 ################################################################################
